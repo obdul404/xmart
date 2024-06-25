@@ -17,5 +17,5 @@ async def root():
 
 
 @app.post("/add")
-async def root2(data: str, data2: str):
-    return {"message": 'Data received: ' + data + ' and ' + data2}
+async def root2(data: str, data2: str,  data3: str):
+    return {"message": 'Data received: ' + data + ' and ' + data2 + ' and ' + data3}
