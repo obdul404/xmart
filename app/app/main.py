@@ -49,7 +49,6 @@ def update_hero(user: User, id: int):
         user_1.name = user.name
         user_1.secret_name = user.secret_name
         session.commit()
-        session.refresh(user)
         return {"This User has been updated in db."}
 
 @app.delete("/delUser")
